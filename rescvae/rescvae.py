@@ -128,7 +128,6 @@ class rescvae():
             with tf.name_scope("block_en"):
                 for i, block in enumerate(self.blocks_en):
                     block_params = utils.get_block_en(block, is_training=self.is_training)
-                    print(block_params)
                     block_obj = Block(
                         inputs=self.net,
                         block_params=block_params,
@@ -211,7 +210,6 @@ class rescvae():
                     else:
                         block_params = utils.get_block_de(
                             block, is_training=self.is_training, outflag=False)
-                    print(block_params)
                     block_obj = Block(
                         inputs=self.net,
                         block_params=block_params,
@@ -239,7 +237,6 @@ class rescvae():
             with tf.name_scope("block_en"):
                 for i, block in enumerate(self.blocks_en):
                     block_params = utils.get_block_en(block, is_training=self.is_training)
-                    print(block_params)
                     block_obj = Block(
                         inputs=self.net,
                         block_params=block_params,
@@ -323,7 +320,6 @@ class rescvae():
                     else:
                         block_params = utils.get_block_de(
                             block, is_training=self.is_training, outflag=False)
-                    print(block_params)
                     block_obj = Block(
                         inputs=self.net,
                         block_params=block_params,
