@@ -1,0 +1,33 @@
+# Copyright (C) 2018 Zhixian MA <zx@mazhixian.me>
+# MIT liscence
+
+"""Configurations for the DNNAE network."""
+
+import tensorflow as tf
+
+class config_mnist(object):
+    rs = 28
+    inputs = tf.placeholder(dtype=tf.float32, shape=(None,rs,rs,1), name='x_in')
+    outputs = tf.placeholder(dtype=tf.float32, shape=(None,rs,rs,1), name='x_out')
+    numclass = 10
+    conditions = tf.placeholder(
+        dtype=tf.float32, shape=(None,numclass), name='conditions')
+    conditions_input = tf.placeholder(
+        dtype=tf.float32, shape=(None,rs,rs,numclass))
+    cflag = True
+    z_length = 32
+    keep_prob = tf.placeholder(dtype=tf.float32, shape=[], name='keep_prob')
+    blocks = [
+        [(16, 8, 2)],
+        [(32, 16, 2)]]
+    loss_mse = False
+    epocheps = 1e-5
+
+class config_train(object):
+    valrate = 0.2
+    batchsize = 100
+    epochs = 100
+    lr_init = 0.0001
+    decay_rate = 0.95
+    keep_prob = 0.5
+    print_step = 1
