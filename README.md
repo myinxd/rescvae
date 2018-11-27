@@ -6,11 +6,11 @@ In summary, we design classes for constructing the ResCVAE network, as well as s
 
 #### Demos on MNIST
 Notebooks of deploying the ResCVAE on the MNIST dataset are provided as examples for the users to construct their own ResCVAE network, which are 
-- [notebook-rescvae-mnist](https://github.com/myinxd/rescvae/blob/master/demo-mnist/notebook-rescvae-mnist.ipynb): Train a ResCVAE network for mnist hand-written digits simulation;
-- [notebook-rescvae-mnist-generation](https://github.com/myinxd/rescvae/blob/master/demo-mnist/notebook-cvae-mnist-generation.ipynb): Generate new handwritten images.
+- [notebook-rescvae-mnist](https://github.com/myinxd/rescvae/blob/master/demo/demo-mnist/notebook-rescvae-mnist.ipynb): Train a ResCVAE network for mnist hand-written digits simulation;
+- [notebook-rescvae-mnist-generation](https://github.com/myinxd/rescvae/blob/master/demo/demo-mnist/notebook-rescvae-mnist-generation.ipynb): Generate new handwritten images.
 
 #### Demos on radio galaxy generation
-We also provide the notebooks to on radio galaxy image generation task [here](https://github.com/myinxd/rescvae/blob/master/demo-radiogalaxy),as well as the trained model. For the detail usage please refer to the codes.
+We also provide the notebooks to on radio galaxy image generation task [here](https://github.com/myinxd/rescvae/blob/master/demo/demo-rg),as well as the trained model. For the detail usage please refer to the codes.
 
 ## Requirements
 Some python packages are required before applying the nets, which are listed as follows. A [setup](https://github.com/myinxd/rescvae/blob/master/setup.py) file is provided to automatically install the packages.
@@ -32,16 +32,16 @@ $ pip3 install <--user> <-e> .
 ```
 You may use `-e` for editable and `--user` for user only.
 
-Detailed usage of our rg-cvae package is demonstrated in [demo-mnist](https://github.com/myinxd/rg-cvae/blob/master/demo/demo-mnist/) and [demo-rg](https://github.com/myinxd/rg-cvae/blob/master/demo/demo-rg/) by jupyter notebooks. Below are examples of handwritten digits and radio galaxies.
+Detailed usage of our rg-cvae package is demonstrated in [demo-mnist](https://github.com/myinxd/rescvae/blob/master/demo/demo-mnist/) and [demo-rg](https://github.com/myinxd/rescvae/blob/master/demo/demo-rg/) by jupyter notebooks. Below are examples of handwritten digits and radio galaxies.
 
 - MNIST
 <center>
-<img src="https://github.com/myinxd/rescvae/blob/master/demo/demo-mnist/mnist_generated.png?raw=true" height=500 width=500>
+<img src="https://github.com/myinxd/rescvae/blob/master/demo/demo-mnist/mnist_generated.png?raw=true" height=400 width=400>
 </center>
 
 - Radio galaxy
 <center>
-<img src="https://github.com/myinxd/rescvae/blob/master/demo/demo-rg/rg_generated.png?raw=true" height=100 width=500>
+<img src="https://github.com/myinxd/rescvae/blob/master/demo/demo-rg/rg-generated.png?raw=true" height=80 width=400>
 </center>
 
 ## Contributor
